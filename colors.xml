@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#EB588C</color>
+    <color name="colorGreen">#00F886</color>
+    <color name="colorPurple">#BE98C7</color>
+    <color name="colorWhite">#C7BBAA</color>
+    <color name="colorWhite1">#A9E2EB</color>
+    <color name="colorPrimaryDark1" tools:ignore="DuplicateDefinition">#000000</color>
+    <color name="colorPrimary1" tools:ignore="DuplicateDefinition">#4F5FD5</color>
+    <color name="colorAccent1" tools:ignore="DuplicateDefinition">#FF4081</color>
+    <color name="colorPrimary2">#1C223C</color>
+    <color name="colorPrimaryDark2">#1C223C</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorPrimary3">#2B2B2B</color>
+    <color name="colorPrimaryDark3">#2B2B2B</color>
+    <color name="colorAccent3">#FF4081</color>
+    <color name="colorBackWhite">#FFFFFF</color>
+    <color name="MainColor">#20CBEB</color>
+
+
+
+    <!--colors for profile-->
+    <color name="Red">#BE0C0C</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="BLUE">#707070</color>
+</resources>
