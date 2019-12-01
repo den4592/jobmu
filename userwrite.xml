@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="요청 게시판"
+        android:gravity="center_vertical|center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="30sp"
+        android:background="@color/MainColor"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:text="제목 :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/TextTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/stroke_white"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/SpinnerHour"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#20CBEB"
+        android:entries="@array/시"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <TextView
+        android:id="@+id/TextHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/SpinnerMin"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#20CBEB"
+        android:entries="@array/분"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/SpinnerPlace1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#20CBEB"
+        android:entries="@array/장소"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextPlace1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/SpinnerPlace2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#20CBEB"
+        android:entries="@array/장소"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextPlace2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/EditCost"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="170dp"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:hint="비용"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:text="마감(분):  +"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditClose"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="250dp"
+        android:digits="0123456789"
+        android:ems="4"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editdetail"
+        android:layout_width="369dp"
+        android:layout_height="270dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/stroke_white"
+        android:gravity="start"
+        android:hint="업무 상세 내용"
+        android:textSize="23dp"
+        android:textColor="@color/whiteTextColor"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:selectAllOnFocus="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <Button
+        android:id="@+id/ButtonWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainColor"
+        android:onClick="askWrite"
+        android:text="글쓰기"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="620dp" />
+    <Button
+        android:id="@+id/ButtonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="684dp"
+        android:background="@color/MainColor"
+        android:text="뒤로가기"
+        android:onClick="cancel"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
