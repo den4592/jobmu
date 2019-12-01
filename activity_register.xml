@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/androidbackground2">
+    >
+
+
 
 
     <LinearLayout
@@ -14,7 +16,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -22,8 +24,9 @@
             android:id="@+id/phone_num"
             android:textColorHint="@color/colorPrimaryDark"
             />
+
         <EditText
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -37,13 +40,13 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:hint="이메일"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/colorPrimaryDark" />
 
         <EditText
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberPassword"
@@ -51,13 +54,20 @@
             android:id="@+id/password"
             android:textColorHint="@color/colorPrimaryDark"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호는 6자이상 숫자로만 작성해주세요"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center"/>
 
 
         <Button
-            android:id="@+id/check"
+            android:id="@+id/check1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:background="@drawable/custom_button2"
             android:color="@android:color/black"
             android:text="확인" />
@@ -68,40 +78,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이미 회원이신가요? '로그인'하기"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+            android:textColor="@android:color/black"/>
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
-        android:text="Registration"
+        android:text="회원가입(1/3)"
+        android:background="@color/MainColor"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="60sp" />
+        android:textColor="@color/whiteTextColor"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center"
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="139dp"
-        android:layout_height="132dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="right"
-        android:layout_marginTop="190dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="-12dp"
-        android:text="     Job無Service"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="35sp"
-        tools:ignore="UnknownId" />
+        />
 
 </RelativeLayout>
